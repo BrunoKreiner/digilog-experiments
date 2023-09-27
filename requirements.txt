@@ -8,3 +8,10 @@ numpy
 fuzzywuzzy
 click
 python-Levenshtein
+selenium
+urllib2
+scikit-learn
+deep_translator
+nltk
+seaborn
+matplotlib
