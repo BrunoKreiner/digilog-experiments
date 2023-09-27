@@ -5,3 +5,13 @@
 # You can also run `make switch-to-poetry` to use the poetry package manager.
 pandas
 numpy
+fuzzywuzzy
+click
+python-Levenshtein
+selenium
+urllib2
+scikit-learn
+deep_translator
+nltk
+seaborn
+matplotlib
