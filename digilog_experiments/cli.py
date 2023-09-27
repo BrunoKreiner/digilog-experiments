@@ -63,8 +63,6 @@ def human_labeling_preprocess(csv_path, output_path, n, seed, include_luqa, shuf
 
     # Take the top n examples
     df_top_n = df.head(n)
-    print("shuffle", shuffle)
-    print("include_luqa", include_luqa)
     # Add the "Label", "Comment", and an example "Confidence" column for human annotators
     df_top_n['Label'] = ''  # Empty string to start, to be filled in by annotators
     df_top_n['Comment'] = ''  # Space for annotators to add any notes or comments
@@ -93,7 +91,6 @@ def label_data(csv_file):
         click.echo(f"Country: {row['Country']}")
         click.echo("------------------------------")
 
-        # Get annotations from the user
         label = click.prompt("Enter label (0 for incorrect, 1 for correct, 2 for website problem)", type=int)
         comment = click.prompt("Enter any comments", default="")
         confidence = click.prompt("Enter confidence level (0-100)", type=int)
